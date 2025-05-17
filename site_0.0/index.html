@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pets & Cia</title>
+    <link rel="stylesheet" href="corpo.css">
+</head>
+<body>
+
+    <!--Cabecario do site-->
+    <header class="cabecario">
+
+        <input type="checkbox" id="menu"> <!--MENU HAMBURGUER-->
+        <label for="menu" class="hamb" title="Abrir/Fechar">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+
+        <nav class="links">
+            
+            <a href="">Raças</a>
+            <a href="sobre.html">Sobre Nós</a>
+            
+        </nav> <!--TERMINO DO MENU HAMBURGUER-->
+
+        <label class="titulo"><a href="index.html" title="Início">PETS & CIA</a></label> <!--TITULO DO SITE-->
+
+        <img src="img/animais-de-estimacao.png" class="icone"> <!--IMAGEM ICONE-->
+
+    </header>  
+    
+    
+    <div class="overlay" onclick="document.getElementById('menu').checked = false;"></div>
+    <!--Conteudo do site-->
+    <main class="conteudo">
+        <section class="entrada">
+            <h1>Cuidado do animal</h1>        
+            <p>Adotou um animal e não sabe por onde começar nos cuidados?</p>
+            <p>aqui você verá alguns 
+                cuidados que você pode ter com seu pet ao longo do seu crescimento.</p>
+        </section>
+
+        <section class="animais">
+            <a href="cachorros.html" class="botao">
+                <img src="img/cachorro.png">Cachorros
+            </a>
+
+            <a href="gatos.html" class="botao">
+                <img src="img/bobtail-japones.png">Gatos
+            </a>
+
+            <a href="" class="botao">
+                <img src="img/passaro.png">Aves
+            </a>
+        </section>
+    </main>
+    <!--Roda pé do site -->
+    <footer class="rodape">
+        
+        <p class="credito">@lemoel_zzz</p>
+        
+    </footer>
+
+</body>
+</html>

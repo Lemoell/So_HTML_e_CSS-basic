@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#menu {
+    display: none;
+}
+
+.hamb {
+    height: 30px;
+    width: 35px;
+    margin-top: 6px;
+    flex-direction: column;
+    display: flex;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+.hamb div {
+    height: 40px;
+    border-radius: 20px;
+    background:black;
+    margin: 2px;
+    transition: all 0.3s ease;
+}
+
+#menu:checked + .hamb div:nth-child(1) {
+    transform: rotate(45deg)translate(7px,7px);
+}
+
+#menu:checked + .hamb div:nth-child(2) {
+    opacity: 0;
+}
+
+#menu:checked + .hamb div:nth-child(3) {
+    transform: rotate(-45deg)translate(7px,-7px);
+}
+
+
+.links {
+    display: none;
+    background-color: #d3c1ad;
+    flex-direction: column;
+    position: absolute;
+    text-align: center;
+    z-index: 9;
+    width: 45vh;
+    height: 100vh;
+}
+
+.links a {
+    text-decoration: none;
+    text-align: center;
+    color:black;
+    flex-direction: column;
+    padding: 5px 0;
+}
+
+.links a:hover {
+    background-color: lightgray;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+#menu:checked ~.links {
+    display: flex;
+    margin-top: 45px;
+}
+
+/*PARTE DE CIMA DO SITE*/
+.cabecario {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #DAC8B3;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+/*Titulo dentro da parte de cima*/
+.titulo {
+    font-size: 30px;
+    letter-spacing: 4px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+    color: black;
+    font-family: "Concert One", sans-serif;
+}
+
+.titulo a{
+    text-decoration: none;
+    color:black;
+}
+/*Icone da parte de cima do site*/
+.icone {
+    width: 35px;
+    height: 35px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+/*CONTEUDO DO MEU SITE*/
+.conteudo {
+    text-align: center;
+    
+}
+/*overlay para deixar a opacidade mais baixa qnd abre o menu*/
+.overlay {
+    position: fixed;
+    opacity: 0.5;
+    z-index: 5;
+    display: none;
+  }
+
+body:has(#menu:checked) .conteudo {
+    opacity: 0.3;
+}
+
+.botao {
+    font-size: 20px;
+    width: 150px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color:black;
+    border-radius: 8px;
+    background-color: #DAC8B3;
+    border:2px solid black;
+}
+
+.botao img {
+    width: 40px;
+}
+
+.animais {
+   margin-top: 100px;
+   display: flex;
+   justify-content: center;
+   gap:30px;
+}
+
+.botao:hover {
+    background-color: lightgray;
+}
+
+.rodape {
+    background-color: #DAC8B3;
+    height: 50px;
+    position: fixed ;
+    width: 100%;
+    bottom: 0;
+    z-index: 10;
+    text-align: center;
+    pointer-events: none;
+}
+
+.credito {
+    display: block;
+    text-align: center;
+}
+
+.final_cont {
+    background-color: #DAC8B3;
+    height: 50px;
+}
+
+.topicos {
+    text-align: left;
+    margin-left: 30%;
+    max-width: 600px;
+
+}
+
+.topicos h3 {
+    text-align: center;
+}

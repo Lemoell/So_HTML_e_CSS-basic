@@ -1,0 +1,104 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    background: url(img/anime-8788959_1280.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    position: absolute;
+    width: 380px;
+    background-color: rgb(53, 55, 59, .6);
+    border: solid 3px rgb(53, 55, 58, .8);
+    border-radius: 35px;
+}
+
+.container h1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 50px;
+}
+
+.usu {
+    position: relative;
+    height: 30px;
+    margin: 30px 0;
+    width: 100%;
+}
+
+.usu input {
+    padding: 4px 0 4px 0;
+    width: 80%;
+    height: 100%;
+    border: none;
+    outline: none;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.usu i {
+    position: absolute;
+    right: 50px;
+    top:  10px;
+}
+
+.sen {
+    position: relative;
+    margin: 30px 0;
+    height: 30px;
+    width: 100%;
+    
+}
+
+.sen input {
+    padding: 4px 0 4px 0;
+    width: 80%;
+    height: 100%;
+    border: none;
+    outline: none;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.sen i {
+    position: absolute;
+    right: 50px;
+    top:  10px;
+}
+
+.recuperar {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.recuperar label {
+    position: relative;
+    margin-right: 50px;
+}
+
+.recuperar a {
+    color: black;
+    font-size: 15px;
+}
+
+.bot_login {
+    height: 40px;
+    width: 80%;
+    border-radius: 50px;
+}
+
+.cadastro {
+    font-size: 12px;
+}
+
+.cadastro a {
+    color: black;
+}
